@@ -21,6 +21,7 @@ export function Home() {
     const { data: statisticsData, isLoading: isLoadingStatistics, status: statusFetchingStatistics, error: errorFetchingStatistics } = useQuery({
         queryKey: ['sensor-statistics', timePeriod],
         queryFn: () => getReadingsStatistics(timePeriod),
+        enabled: !!appContext?.username,
     });
 
     if (statusFetchingStatistics === 'error') {
