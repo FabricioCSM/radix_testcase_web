@@ -7,7 +7,6 @@ This is the frontend application for the Sensor Data Management system built usi
 ## Features
 
 - Retrieve unique equipment IDs
-- Fetch all recorded sensor readings
 - Get sensor readings filtered by equipment ID and time range
 - View sensor statistics
 - Upload CSV files to update sensor values
